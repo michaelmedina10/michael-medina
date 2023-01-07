@@ -1,11 +1,5 @@
-import { Flex, Text } from "@chakra-ui/react";
+import Layout from "../components/layout/Layout";
 
-export default function Home() {
-  return (
-    <Flex height="100vh" alignItems="center" justifyContent="center">
-      <Text color="tomato" fontSize="6xl" fontWeight="bold">
-        Portfolio
-      </Text>
-    </Flex>
-  );
+export default function Portfolio() {
+  return <Layout title="Portfolio" subTitle="About Me" children="Conteudo" />;
 }
