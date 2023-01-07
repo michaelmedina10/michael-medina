@@ -10,12 +10,11 @@ interface LayoutProps {
 
 export default function Layout(props: LayoutProps) {
   return (
-    <Flex direction="column" height="100vh" width="100%">
+    <Flex direction="column" minHeight="100vh" minWidth="100%">
       <MenuSuperior />
       <Content title={props.title} subTitle={props.subTitle}>
         {props.children}
       </Content>
-      ;
     </Flex>
   );
 }
