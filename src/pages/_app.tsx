@@ -1,9 +1,12 @@
 // pages/_app.js
-import { ChakraProvider, Container } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
+import "@fontsource/kalam/400.css";
+import "@fontsource/open-sans/700.css";
+import theme from "../config/theme";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Component {...pageProps} />
     </ChakraProvider>
   );

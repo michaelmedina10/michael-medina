@@ -4,13 +4,13 @@ import MenuSuperior from "../menu/MenuSuperior";
 
 interface LayoutProps {
   title: string;
-  subTitle: string;
+  subTitle?: string;
   children?: any;
 }
 
 export default function Layout(props: LayoutProps) {
   return (
-    <Flex direction="column" minHeight="100vh" minWidth="100wh">
+    <Flex direction="column" minHeight="100vh" minWidth="100vw">
       <MenuSuperior />
       <Content title={props.title} subTitle={props.subTitle}>
         {props.children}
